@@ -9,7 +9,7 @@ We use the RefCOCO+ (https://github.com/lichengunc/refer) as our basic dataset w
 
 To prepare the dataset, download COCO train_2014 (http://cocodataset.org/#download) images in local and revise the "image_root" directory accordingly.
 
-image_root = '/media/drive1/Data/refer/data/images'
+image_root = '/path/to/your/coco/train2014/images'
 
 ## Files:
 ca_annotations:<pre>Output dictionary h5py file <filename, attributes one-hot> </pre>
