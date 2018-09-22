@@ -1,7 +1,22 @@
 # RefCOCO+_Annotator
-A python GUI Script for annotatint the image-level attribute in RefCOCO+
-
 This script is for annotating the image-level attributes in RefCOCO+ dataset:
 <p float="center">
-  <img src="/GUI.png" width="400" />
+  <img src="/GUI.png" width="250" />
 </p>
+
+## Dataset preparation:
+We use the RefCOCO+ (https://github.com/lichengunc/refer) as our basic dataset which contains a comprehensive annotation on both instance level label, as well as attributes like: color, materials, locations and so forth. 
+
+To prepare the dataset, download COCO train_2014 (http://cocodataset.org/#download) images in local and revise the "image_root" directory accordingly.
+
+image_root = '/media/drive1/Data/refer/data/images'
+
+## Files:
+ca_annotations:<pre>Output dictionary h5py file <filename, attributes one-hot> </pre>
+
+counterfactual_grounding:<pre> <filename, attributestokens, bboxes> </pre>
+
+counterfactual_grounding contains 1765 image names in COCO2014 train dataset, possible attribute tokens (extracted from coco caption), and the associated bounding boxes.
+
+
+
