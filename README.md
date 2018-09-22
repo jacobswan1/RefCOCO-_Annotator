@@ -14,7 +14,7 @@ image_root = '/path/to/your/coco/train2014/images'
 ## Files:
 ca_annotations:<pre>Output dictionary h5py file <filename, attributes one-hot> </pre>
 
-counterfactual_grounding:<pre> <filename, attributestokens, bboxes> </pre>
+counterfactual_grounding:<pre> <filename, attribute tokens, bboxes> </pre>
 
 counterfactual_grounding contains 1765 image names in COCO2014 train dataset, possible attribute tokens (extracted from coco caption), and the associated bounding boxes.
 
