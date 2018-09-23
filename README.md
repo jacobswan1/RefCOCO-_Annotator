@@ -1,5 +1,5 @@
 # RefCOCO+_Annotator
-This script is for annotating the image-level attributes in RefCOCO+ dataset:
+A image-level attributes (filling) annotation tool written in Python Tkinter. 
 <p float="center">
   <img src="/GUI.png" width="250" />
 </p>
@@ -11,13 +11,19 @@ To prepare the dataset, download COCO train_2014 (http://cocodataset.org/#downlo
 
 image_root = '/path/to/your/coco/train2014/images'
 
-## Files:
+## Contents:
 ca_annotations:<pre>Output dictionary h5py file <filename, attributes one-hot> </pre>
 
 counterfactual_grounding:<pre> <filename, attribute tokens, bboxes> </pre>
 
 counterfactual_grounding contains 1765 image names in COCO2014 train dataset, possible attribute tokens (extracted from coco caption), and the associated bounding boxes.
 
+## Usage
+1. Preparing the images and set the root directory.
+2. Prepare the original annotation h5py file.
+3. Run the scripy by: <pre>
+python3 Annotator.py
+</pre>
 
 ## How it works?
 The ca_annotations is for storing the <image, attributes> pairs.
