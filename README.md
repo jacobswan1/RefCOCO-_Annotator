@@ -29,3 +29,7 @@ python3 Annotator.py
 The ca_annotations is for storing the <image, attributes> pairs.
 
 counterfactual_grounding got the validation/testing files from RefCOCO+ and their textual grounding annotations. For every new image, we select the attributes and store the <image, attributes> to ca_annotations file. In the same time the image from ca_annotations got removed. 
+
+## Sample Data Dowload:
+We filtering out 1087 images from RefCOCO+ and the annotaions in <a href="https://drive.google.com/open?id=1l43rGwmOmvFWPjbBN3ARaC_ea6-8tFVf">HERE</a>
+.
